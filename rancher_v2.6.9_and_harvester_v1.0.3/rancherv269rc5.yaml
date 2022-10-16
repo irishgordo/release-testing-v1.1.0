@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "local"
+  cluster:
+    server: "https://192.168.1.56/k8s/clusters/local"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJ2VENDQ\
+      VdPZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQkdNUnd3R2dZRFZRUUtFeE5rZVc1aGJXbGoKY\
+      kdsemRHVnVaWEl0YjNKbk1TWXdKQVlEVlFRRERCMWtlVzVoYldsamJHbHpkR1Z1WlhJdFkyRkFNV\
+      FkyTlRnNApOelU1TmpBZUZ3MHlNakV3TVRZd01qTXpNVFphRncwek1qRXdNVE13TWpNek1UWmFNR\
+      Vl4SERBYUJnTlZCQW9UCkUyUjVibUZ0YVdOc2FYTjBaVzVsY2kxdmNtY3hKakFrQmdOVkJBTU1IV\
+      1I1Ym1GdGFXTnNhWE4wWlc1bGNpMWoKWVVBeE5qWTFPRGczTlRrMk1Ga3dFd1lIS29aSXpqMENBU\
+      VlJS29aSXpqMERBUWNEUWdBRUZ1OURiYkVTeWZNYwo3ZStUUDVBeDNXRllkNDNSYUpQcXpSK3Jle\
+      UhZbFdRdmxDM09acFpDYWM0Vk1zVXJwWkdUQzM4cURNcll6d09TCndnNE5ydTgvRjZOQ01FQXdEZ\
+      1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0hRWUQKVlIwT0JCWUVGR\
+      3NNQ3NnZXZsTW1xNitLWTZ5Sm92aExkdkRlTUFvR0NDcUdTTTQ5QkFNQ0EwZ0FNRVVDSVFEUgpLZ\
+      VVxUGExb00vbHcvNlpSUnFYNW5jMDZSWDJDYnc3TEtZblFNNlhieXdJZ0grRkhoSVpLelhYUkt6b\
+      GFIZ3k2CnZ3TVJmUjdHVit4L2N4a1FjTzZ6UWpFPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0t"
+
+users:
+- name: "local"
+  user:
+    token: "kubeconfig-user-dmq5b8twsq:292z2mvqcxjh44sbbsfpmd9fbhkh5nph757swb6dswzxnrgtlwq69b"
+
+
+contexts:
+- name: "local"
+  context:
+    user: "local"
+    cluster: "local"
+
+current-context: "local"
